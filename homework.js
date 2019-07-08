@@ -186,7 +186,7 @@ function selectionSort(array){
     let sorted = []
 
     while (array.length > 0){
-        let min = Math.min(...array);
+        let min = minimum(array);
         let x = array.indexOf(min);
         array.splice(x,1)
         sorted.push(min)
